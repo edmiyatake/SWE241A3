@@ -1,5 +1,5 @@
 # define function that takes in array of strings and returns list of list of strings
-# takes in a bunch of strings and probably the list form of hashmap key-value pairs
+
 def anagram(strings):
     newMap = {}  
     
