@@ -51,6 +51,7 @@ def sortString(s):
 # test cases that were given by canvas prompt
 strings = ["bucket","rat","mango","tango","ogtan","tar"]
 result = anagram(strings)
+print(result)
 
 # test cases ALL WORK
 # test1 = ["bucket", "rat", "mango", "tango", "ogtan", "tar"]
