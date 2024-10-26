@@ -11,10 +11,6 @@ def anagram(strings):
             newMap[sorted] = [val]
     return list(newMap.values())
 
-# each sort program takes in a list and spits out a hashMap
-# calculate sum of ASCII values for each string and place into hashmap with index sortedSTR
-# Randomly chose merge sort and heap sort
-
 def merge(left,right):
     solution = []
     i,j = 0,0
@@ -49,30 +45,23 @@ def sortString(s):
     return "".join(chars)
 
 # test cases that were given by canvas prompt
+print("MERGE SORT SOLUTION")
+print("Assignment Example")
 strings = ["bucket","rat","mango","tango","ogtan","tar"]
 result = anagram(strings)
-print(result)
+print(f"Group {strings} into anagrams: {result} \n")
 
 # test cases ALL WORK
-# test1 = ["bucket", "rat", "mango", "tango", "ogtan", "tar"]
-# test2 = ["apple", "banana", "carrot", "date"]
-# test3 = ["listen", "silent", "enlist", "inlets"]
-# test4 = ["hello", "world", "drolw", "cat", "tac"]
-# test5 = ["word"]
-# test6 = []
-# test7 = ["aaa", "aa", "a", "aaa", "aa"]
-# result1 = anagram(test1)
-# result2 = anagram(test2)
-# result3 = anagram(test3)
-# result4 = anagram(test4)
-# result5 = anagram(test5)
-# result6 = anagram(test6)
-# result7 = anagram(test7)
-
-# print(result1)
-# print(result2)
-# print(result3)
-# print(result4)
-# print(result5)
-# print(result6)
-# print(result7)
+print("Custom testcases \n")
+test2 = ["apple", "banana", "carrot", "date"]
+test3 = ["listen", "silent", "enlist", "inlets"]
+test4 = ["hello", "world", "drolw", "cat", "tac"]
+test5 = ["word"]
+test6 = []
+test7 = ["aaa", "aa", "a", "aaa", "aa"]
+print(f"Group {test2} into anagrams: {anagram(test2)}")
+print(f"Group {test3} into anagrams: {anagram(test3)}")
+print(f"Group {test4} into anagrams: {anagram(test4)}")
+print(f"Group {test5} into anagrams: {anagram(test5)}")
+print(f"Group {test6} into anagrams: {anagram(test6)}")
+print(f"Group {test7} into anagrams: {anagram(test7)}")
